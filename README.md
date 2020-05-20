@@ -38,3 +38,45 @@ $ git clone https://github.com/cha1ra/nuxt-init-setup.git
 $ cd nuxt-init-setup
 $ bash script.sh
 ```
+
+## Process
+
+```
+cp /***/default.vue ./layouts/default.vue
+rm -rf ./components
+mkdir ./components
+rm -rf ./static
+mkdir ./static
+rm -rf ./pages
+mkdir ./pages
+cp /***/index.vue ./pages/index.vue
+```
+  
+```default.vue
+<template>
+  <v-app>
+    <v-content>
+      <Nuxt />
+    </v-content>
+  </v-app>
+</template>
+
+```
+  
+```index.vue
+<template>
+  <v-container>
+    <v-row>
+      <v-col>
+        Hello, Nuxt
+      </v-col>
+    </v-row>
+  </v-container>
+</template>
+<script>
+export default {
+
+}
+</script>
+
+```
