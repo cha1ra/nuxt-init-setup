@@ -32,3 +32,9 @@ $ cd app
 $ git clone https://github.com/cha1ra/nuxt-init-setup.git
 ```
 
+### exec nuxt-init.sh
+
+```
+$ cd nuxt-init-setup
+$ bash script.sh
+```
